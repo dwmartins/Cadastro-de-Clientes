@@ -28,35 +28,51 @@
 
     <section class="form">
 
-            <form action="index.html" method="post">
+        <form action="index.html" method="post">
 
-                <label><span class="obrigatorio">*</span> nome completo</label>
+            <label><span class="obrigatorio">*</span> nome completo</label>
 
-                <input type="text" name="nome">
+            <input type="text" name="nome">
 
-                <div class="genero">
-                    <label><span class="obrigatorio">*</span>genero</label>
+            <div class="genero">
+                <div>
+                    <label><span class="obrigatorio">*</span>genero</label> <br>
 
                     <p>pra gente te conhecer um pouquinho melhor :)</p>
+                </div>
+
+                <div class="inputsGenero">
+                    <div>
+                        <input class="teste" type="radio" name="genero" value="feminino"> feminino
+                    </div>
 
                     <div>
-                       <input type="radio" name="genero" value="feminino"> feminino
+                        <input type="radio" name="genero" value="masculino"> masculino
+                    </div>
 
-                       <input type="radio" name="genero" value="masculino"> masculino
-
-                       <input type="radio" name="genero" value="nao-informado"> Não informado
+                    <div>
+                        <input type="radio" name="genero" value="nao-informado"> Não informado
                     </div>
                 </div>
+            </div>
 
-                <div class="nascimento">
-                    <label><span class="obrigatorio">*</span>data de nascimento</label>
+            <div class="nascimento">
+                <label><span class="obrigatorio">*</span>data de nascimento</label>
 
-                    <p>necessário pra identificar a maioridade, no formato DD/MM/AAAA</p>
+                <p>necessário pra identificar a maioridade, no formato DD/MM/AAAA</p>
 
-                    <input type="date" name="data">
-                </div>
+                <input type="tel" name="data" placeholder="__/__/____">
+            </div>
 
-            </form>
+            <div class="cpf">
+                <label><span class="obrigatorio">*</span>CPF</label>
+
+                <P>necessário para emissão as Notas Fiscais</P>
+
+                <input type="tel" name="cpf" placeholder="__ __ __ _">
+            </div>
+
+        </form>
     </section>
 </body>
 
