@@ -232,4 +232,8 @@ form .genero {
     .nascimento p {
         font-size: 11px;
     }
+
+    .cpf p {
+        font-size: 11px;
+    }
 }
