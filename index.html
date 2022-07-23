@@ -43,7 +43,7 @@
 
                 <div class="inputsGenero">
                     <div>
-                        <input class="teste" type="radio" name="genero" value="feminino"> feminino
+                        <input type="radio" name="genero" value="feminino"> feminino
                     </div>
 
                     <div>
@@ -65,11 +65,57 @@
             </div>
 
             <div class="cpf">
+
                 <label><span class="obrigatorio">*</span>CPF</label>
 
                 <P>necessário para emissão as Notas Fiscais</P>
 
                 <input type="tel" name="cpf" placeholder="__-__-__-_">
+
+                <a href="#">é pessoa jurídica? conheça a americanas empresas</a>
+
+            </div>
+
+            <div class="telefone">
+                <label><span class="obrigatorio">*</span>telefone</label>
+
+                <p>caso a gente precise entrar em contato sobre seus pedidos
+                </p>
+
+                <input type="tel" name="telefone" placeholder="(__) ___-___">
+
+                <div>
+                    <input type="checkbox" name="notificacoesWhats" checked> receber notificações por whatsapp
+                </div>
+            </div>
+
+            <div class="email">
+                <label><span class="obrigatorio">*</span>e-mail</label> <br>
+
+                <input type="email" name="email">
+
+                <div>
+                    <input type="checkbox" name="notificacoesEmail" checked> receber e-mails promocionais
+                </div>
+            </div>
+
+            <div class="senha">
+                <label><span class="obrigatorio">*</span>senha</label>
+                <p>precisa ter entre 6 a 20 caracteres</p>
+
+                <input type="password" name="senha">
+
+                <div class="dados">
+                    <input type="checkbox" name="dados" checked> <p>compartilhar meus dados com parceiros para ter conteúdos personalizados, veja <span><a href="#">como funciona.</a></span> </p>
+                </div>
+            </div>
+
+            <div class="btn-cadastro">
+                <button type="submit">criar seu cadastro</button>
+
+                <p>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <a href="#">Política de Privacidade</a></p>
+
+                <p>já tem cadastro? <a href="#">entrar</a></p>
             </div>
 
         </form>

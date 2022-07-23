@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -11,10 +11,11 @@
     --lighGray: #979494;
     --lighBlack: #666464;
     --borderInput: #e2d8d8;
+    --white: #ffff;
     --black: #0000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 header {
     background-color: var(--red);
@@ -67,7 +68,7 @@ header img {
     .title {
         justify-content: left;
     }
-    
+
     .title div {
         text-align: left;
     }
@@ -87,7 +88,7 @@ header img {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .nome {
@@ -106,7 +107,7 @@ input {
 
 form {
     width: 90%;
-    max-width: 400px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +148,7 @@ form .genero {
     width: 140px;
 }
 
-.inputsGenero input{
+.inputsGenero input {
     width: 23px;
     margin: 0 5px;
     position: relative;
@@ -175,7 +176,9 @@ form .genero {
     font-size: 14px;
 }
 
-.nascimento input{
+.nascimento input,
+.cpf input,
+.telefone input {
     display: flex;
     text-align: center;
     margin: 10px 0;
@@ -185,26 +188,108 @@ form .genero {
     border: 1px solid var(--borderInput);
 }
 
-.nascimento input::-webkit-input-placeholder {
+.nascimento input::-webkit-input-placeholder,
+.cpf input::-webkit-input-placeholder,
+.telefone input::-webkit-input-placeholder {
     color: var(--borderInput);
 }
 
-.cpf input {
-    display: flex;
-    text-align: center;
-    margin: 10px 0;
-    width: 120px;
-    height: 45px;
-    font-size: 18px;
-    border: 1px solid var(--borderInput);
+.cpf {
+    margin: 15px 0;
 }
 
-.cpf input::-webkit-input-placeholder {
-    color: var(--borderInput);
-}
-
-.cpf p {
+.cpf p,
+.telefone p,
+.senha p {
     color: var(--lighGray);
+    margin: 5px 0;
+}
+
+.cpf a {
+    color: var(--lighBlack);
+}
+
+.telefone,
+.senha {
+    margin: 15px 0;
+}
+
+.telefone div {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    color: var(--lighBlack);
+}
+
+.telefone div input {
+    width: 18px;
+}
+
+.email div {
+    color: var(--lighBlack);
+}
+
+.email div input {
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    width: 18px;
+    color: var(--lighBlack);
+}
+
+.senha input {
+    width: 258px;
+}
+
+.senha .dados {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+}
+
+.senha div input {
+  width: 30px;
+}
+
+.senha .dados p,a {
+    color: var(--lighBlack)
+}
+
+.btn-cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 3px;
+    width: 234px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: var(--lightRed);
+}
+
+.btn-cadastro p {
+    color: var(--lighBlack);
+    margin-bottom: 30px;
+}
+
+.btn-cadastro a {
+    color: #504c4c;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 770px) {
@@ -220,7 +305,10 @@ form .genero {
         width: 210px;
     }
 
-    .genero p {
+    .genero p,
+    .nascimento p,
+    .cpf p,
+    .telefone p {
         font-size: 11px;
     }
 
@@ -229,11 +317,28 @@ form .genero {
         max-width: 430px;
     }
 
-    .nascimento p {
-        font-size: 11px;
+    .cpf a {
+        font-size: 14px;
     }
+}
 
-    .cpf p {
-        font-size: 11px;
-    }
+
+/************ end cadastro ************/
+
+
+/* pagina de login em desenvolvimento!! */
+
+/* cod temporario */
+
+.codeTemporario {
+    background-color: var(--lighBlack);
+    height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.codeTemporario h1 {
+    font-size: 3rem;
+    color: #fff;
 }
