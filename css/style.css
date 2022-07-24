@@ -106,7 +106,7 @@ input {
 }
 
 form {
-    width: 90%;
+    width: 95%;
     max-width: 420px;
     display: flex;
     flex-direction: column;
@@ -293,9 +293,6 @@ button:hover {
 }
 
 @media screen and (max-width: 770px) {
-    .form {
-        justify-content: left;
-    }
 
     form {
         max-width: 800px;
@@ -320,8 +317,15 @@ button:hover {
     .cpf a {
         font-size: 14px;
     }
+
 }
 
+
+@media screen and (max-width: 770px) {
+    .form {
+
+    }
+}
 
 /************ end cadastro ************/
 
@@ -334,11 +338,13 @@ button:hover {
     background-color: var(--lighBlack);
     height: calc(100vh - 85px);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .codeTemporario h1 {
-    font-size: 3rem;
-    color: #fff;
+    width: 90%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
