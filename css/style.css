@@ -354,7 +354,7 @@ button:hover {
 
 .loginCliente form {
     max-width: 380px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .loginCliente form div {
@@ -399,6 +399,13 @@ button:hover {
     text-decoration: underline;
 }
 
+.loginCliente hr {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #e0dbdb07;
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .loginCliente form {
         max-width: none;
@@ -406,5 +413,13 @@ button:hover {
 
     .login {
         max-width: none;
+    }
+
+    .cadastrar {
+        max-width: none;
+    }
+
+    .loginCliente hr {
+        display: block;
     }
 }
