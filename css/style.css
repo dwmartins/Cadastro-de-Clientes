@@ -6,7 +6,7 @@
 }
 
 :root {
-    --red: #f80032;
+    --red: #f8000c;
     --lightRed: #eb3343;
     --lighGray: #979494;
     --lighBlack: #666464;
@@ -103,6 +103,8 @@ input {
     border-radius: 8px;
     border: 1px solid var(--borderInput);
     margin: 0 0 20px 0;
+    padding: 8px;
+    font-size: 15px;
 }
 
 form {
@@ -249,11 +251,12 @@ form .genero {
 }
 
 .senha div input {
-  width: 30px;
+    width: 30px;
 }
 
-.senha .dados p,a {
-    color: var(--lighBlack)
+.senha .dados p,
+a {
+    color: var(--lighBlack);
 }
 
 .btn-cadastro {
@@ -293,7 +296,6 @@ button:hover {
 }
 
 @media screen and (max-width: 770px) {
-
     form {
         max-width: 800px;
     }
@@ -317,34 +319,92 @@ button:hover {
     .cpf a {
         font-size: 14px;
     }
-
-}
-
-
-@media screen and (max-width: 770px) {
-    .form {
-
-    }
 }
 
 /************ end cadastro ************/
 
+/* pagina de login */
 
-/* pagina de login em desenvolvimento!! */
+.login {
+    margin: 30px 0 10px 0;
+    padding: 0 10px;
+    width: 95%;
+    max-width: 420px;
+    text-align: center;
+}
 
-/* cod temporario */
+.login h1 {
+    color: var(--lighBlack);
+    margin: 10px 0;
+    font-size: 28px;
+}
 
-.codeTemporario {
-    background-color: var(--lighBlack);
-    height: calc(100vh - 85px);
+.login p {
+    color: var(--lighBlack);
+    font-size: 17px;
+}
+
+.loginCliente {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.loginCliente form {
+    max-width: 380px;
+    margin-bottom: 40px;
+}
+
+.loginCliente form div {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.codeTemporario h1 {
-    width: 90%;
-    color: white;
-    font-size: 2rem;
+.loginCliente a {
+    text-decoration: none;
+}
+
+.loginCliente input {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    margin-top: 5px;
+}
+
+.loginCliente input::-webkit-input-placeholder {
+   color: var(--borderInput);
+}
+
+.loginCliente button {
+    width: 100%;
+    box-shadow: 0px 4px 5px -1px rgba(248, 0, 50, 0.4);
+}
+
+.cadastrar {
     text-align: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+.cadastrar p {
+    color: var(--lighBlack);
+    margin-bottom: 20px;
+}
+
+.cadastrar a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .loginCliente form {
+        max-width: none;
+    }
+
+    .login {
+        max-width: none;
+    }
 }

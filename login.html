@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 
+    <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
     <header>
         <img src="./img/logo-top.png" alt="Logo">
     </header>
 
-    <section class="codeTemporario">
-        <h1>Tela de login em desenvolvimento!</h1>
+
+    <section class="loginCliente">
+        <div class="login">
+
+            <h1>
+                <span><i class="fa-regular fa-user"></i> login do cliente</span>
+            </h1>
+
+            <p>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p>
+
+        </div>
+
+        <form action="login.html" method="post">
+
+            <label>e-mail:</label>
+            <input type="email" name="email" placeholder="ex-joaodasilva@gmail.com">
+
+            <div>
+                <label>senha na americanas:</label>
+
+                <a href="#">esqueceu?</a>
+            </div>
+
+            <input type="password" name="senha">
+
+            <button type="submit">Continuar</button>
+
+        </form>
+
+        <div class="cadastrar">
+            <p>
+                não tem cadastro? <span><a href="#">cadastre-se</a></span>
+            </p>
+
+            <p>
+                Ao continuar com o acesso, você concorda com a nossa <span><a href="#">política de privacidade</a></span>
+            </p>
+        </div>
+
     </section>
 </body>
+
 </html>
