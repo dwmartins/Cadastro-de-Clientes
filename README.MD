@@ -2,7 +2,7 @@
 
 Desafio do curso "Feras da tecnologia", realização de uma pagina de cadastro fictícia, que se aparenta com o oficial do site da Americanas.
 
-**Visuaizar projeto:** dwmartins.github.io/cadastro-de-clientes/
+**Visuaizar projeto:** <a href="dwmartins.github.io/cadastro-de-clientes/" > dwmartins.github.io/cadastro-de-clientes/ 
 
 ## Preview
 
